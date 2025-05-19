@@ -6,7 +6,7 @@ metadata:
     app: argocd-nextjs-service
 spec:
   selector:
-    app: argocd-nextjs-deployment
+    app: argocd-nextjs
   ports:
     - protocol: TCP
       port: 80
