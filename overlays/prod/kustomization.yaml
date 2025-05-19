@@ -1,10 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 patches:
-  - path: patch-deployment.yaml
+- path: patch-deployment.yaml
 images:
-  - name: yeobi01/argocd-nextjs
-    newTag: latest
+- name: yeobi/argocd-nextjs
+  newTag: 5fed97c2967bfcccbf75cddee846bc6ebe7d1dec
+- name: yeobi01/argocd-nextjs
+  newTag: latest
