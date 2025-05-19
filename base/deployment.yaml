@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-nextjs-deployment
+  labels:
+    app: argocd-nextjs-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocd-nextjs
+  template:
+    metadata:
+      labels:
+        app: argocd-nextjs
+    spec:
+      containers:
+        - name: argocd-nextjs-container
+          image: yeobi01/argocd-nextjs:latest # overlay prod와 dev에 따라 덮어씌움
+          ports:
+            - containerPort: 3000
