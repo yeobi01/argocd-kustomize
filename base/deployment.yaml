@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: argocd-nextjs-container
-          image: yeobi01/argocd-nextjs:latest # overlay prod와 dev에 따라 덮어씌움
+          image: yeobi/argocd-nextjs # overlay prod와 dev에 따라 덮어씌움
           ports:
             - containerPort: 3000
