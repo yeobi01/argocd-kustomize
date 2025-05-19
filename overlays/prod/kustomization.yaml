@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
   - ../../base
   - ingress.yaml
-patchesStrategicMerge:
-  - patch-deployment.yaml
+patches:
+  - path: patch-deployment.yaml
 images:
   - name: yeobi01/nextjs-app
     newTag: latest

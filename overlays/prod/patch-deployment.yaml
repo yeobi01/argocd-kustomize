@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-nextjs
+  name: argocd-nextjs-deployment
 spec:
   replicas: 2
   template:
