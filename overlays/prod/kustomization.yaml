@@ -7,4 +7,4 @@ patches:
 - path: patch-deployment.yaml
 images:
 - name: yeobi/argocd-nextjs
-  newTag: d982544b1f93a8e8ec8a9a9601d9c3fc4daf1199
+  newTag: 6402e211efe61aacc84db5fb146a7eb027249954
